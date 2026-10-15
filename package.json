@@ -1,0 +1,65 @@
+{
+  "name": "hospiman-schema-validator-joi-01",
+  "version": "0.0.0",
+  "description": "A starter for creating a TypeScript package.",
+  "homepage": "https://github.com/author/library#readme",
+  "bugs": {
+    "url": "https://github.com/author/library/issues"
+  },
+  "license": "MIT",
+  "author": "Author Name <author.name@mail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/author/library.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "bumpp": "^11.1.0",
+    "typescript": "^7.0.2",
+    "vite-plus": "^0.2.4"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.1.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "12.2.0",
+      "onFail": "download"
+    }
+  },
+  "dependencies": {
+    "joi": "^18.2.9",
+    "libphonenumber-js": "^1.13.15"
+  }
+}
