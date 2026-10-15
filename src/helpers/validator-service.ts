@@ -10,7 +10,7 @@ class SchemaValidatorServiceBase {
     allowUnknown,
     stripUnknown,
   }: {
-    schema: IObjectSchema<any>;
+    schema: IObjectSchema<T>;
     data: Record<string, any>;
     errorMesssagePrefix?: string;
     canThrowTheError: boolean;
@@ -43,7 +43,7 @@ class SchemaValidatorServiceBase {
   }: {
     allowUnknown?: boolean;
     stripUnknown?: boolean;
-    schema: IObjectSchema<any>;
+    schema: IObjectSchema<T>;
     data: Record<string, any>;
   }) {
     const { validatedData } = await this.validate({
