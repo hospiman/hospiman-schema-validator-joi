@@ -1,36 +1,22 @@
 {
-  "name": "hospiman-schema-validator-joi-01",
-  "version": "0.0.0",
-  "description": "A starter for creating a TypeScript package.",
-  "homepage": "https://github.com/author/library#readme",
-  "bugs": {
-    "url": "https://github.com/author/library/issues"
-  },
+  "name": "@hospiman/schema-validator-joi",
+  "version": "0.0.1",
+  "description": "Hospiman joi schema validator wrapper",
+  "homepage": "https://github.com/hospiman/hospiman-schema-validator-joi#readme",
   "license": "MIT",
-  "author": "Author Name <author.name@mail.com>",
+  "author": "Hospiman",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/hospiman/hospiman-schema-validator-joi.git"
   },
   "files": [
     "dist"
   ],
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
-    }
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
   },
   "publishConfig": {
     "access": "public"
