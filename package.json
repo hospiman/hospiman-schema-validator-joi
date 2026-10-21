@@ -1,6 +1,6 @@
 {
   "name": "@hospiman/schema-validator-joi",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Hospiman joi schema validator wrapper",
   "homepage": "https://github.com/hospiman/hospiman-schema-validator-joi#readme",
   "license": "MIT",
@@ -46,7 +46,7 @@
     }
   },
   "dependencies": {
-    "joi": "^18.2.9",
+    "joi": "18.2.9",
     "libphonenumber-js": "^1.13.15"
   }
 }
