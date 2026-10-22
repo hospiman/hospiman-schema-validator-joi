@@ -1,3 +1,4 @@
+export { SchemaValidatorGenericError } from "./helpers/errors.ts";
 import * as schemaVal from "./helpers/schema-validator-components.ts";
 import {
   type ISchemaMap as ISchemaMap0,
